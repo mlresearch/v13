@@ -17,11 +17,11 @@ sections:
 - name: default
   title: Accepted Papers
 layout: proceedings
-key: SugiyamaACML2010
+id: SugiyamaACML2010
 abstract: 
 origpdf: 
 pdf: "./SugiyamaACML2010/SugiyamaACML2010.pdf"
-editors:
+editor:
 - given: Masashi
   family: Sugiyama
 - given: Qiang

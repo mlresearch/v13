@@ -1,218 +1,57 @@
 ---
 layout: default
-title: "JMLR W&amp;CP: Volume 13: 2nd Asian Conference on Machine Learning"
 ---
- 
-<DIV id="content">
 
-<TABLE cellpadding="2" cellspacing="2" border="0">
-       <TBODY>
-         <TR>
-           <TD valign="top">                                   
-      <H1>JMLR Workshop and Conference Proceedings<BR>
+<div id="content" class="home">
 
-     Volume 13: 2nd Asian Conference on Machine Learning</H1>
+  <h1>Proceedings of Machine Learning Research</h1>
+  <h2>Volume {{ site.volume }}: {{ site.conference }} {{ site.start | date: "%B %-d" }} to {{ site.end | date: "%B %-d, %Y" }}, {{ site.address }}</h2>
 
-           </TD>
-           <TD valign="top">&nbsp;</TD>
-         </TR>
-                   
-  </TBODY>     
-</TABLE>
-<H2> Proceedings of 2nd Asian Conference on Machine Learning (ACML2010)
-<BR>
- November 8-10, 2010, Tokyo, Japan</H2>
+  
+  <p><strong>Editors:
+      {% assign lastone = site.editor | last %}
+      {% for person in site.editor %}
+      {% include listperson.html %}
+      {% endfor %}
+  </strong></p>
 
-        <B><BR>
-        Editors: Masashi Sugiyama and Qiang Yang
-    </B><BR>
+  <div id="sectionnav">
+    {% if site.sections %}
+    <p>Contents:</p>
+    <ul>
+      {% for section in site.sections %}
+      <li><a href="#{{ section.name }}">{{ section.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <label for="search-authors">Filter Authors:</label>
+    <input type="search" name="filter-authors" id="search-authors" value />
+    <label for="search-titles">Filter Titles:</label>
+    <input type="search" name="filter-titles" id="search-titles" value />
+  </div>
+  {% if site.sections %}
+  {% for section in site.sections %}
+  <h3 id="{{ section.name }}">{{ section.title }}</h3>
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
+  {% for post in sorted %}
+    {% if section.name == post.section %}
+    {% include listpaper.html %}
+    {% endif %}
+    {% endfor %}
+  </dl>
+  {% endfor %}
+  {% endif %}
+  <dl>
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
+  {% for post in sorted %}
+  {% unless post.section %} 
+  {% include listpaper.html %}
+  {% endunless %}
+  {% endfor %}
 
-<TABLE cellspacing="0" cellpadding="4">
-<TBODY><TR><TD><DL>
-<DT>Preface
-</DT>
-<DD><B><I>Masashi Sugiyama and Qiang Yang</I></B><I></I>; 
-13:i-xiv, 2010.<BR>
-<A target="_blank" href="./sugiyama10a/sugiyama10a.pdf">[pdf]</A></DD>
-</DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Pairwise Measures of Causal Direction in Linear Non-Gaussian Acyclic Models
-</DT>
-<DD><B><I>Aapo Hyvarinen</I></B><I></I>; 
-13:1-16, 2010.<BR>
-<A href="./hyvarinen10a.html">[abs]</A>
-<A target="_blank" href="./hyvarinen10a/hyvarinen10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Learning Polyhedral Classifiers Using Logistic Function</DT>
-<DD><B><I>Naresh Manwani and P. S. Sastry</I></B><I></I>; 
-13:17-30, 2010.<BR>
-<A href="./manwani10a.html">[abs]</A>
-<A target="_blank" href="./manwani10a/manwani10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Ellipsoidal Support Vector Machines</DT>
-<DD><B><I>Michinari Momma, Kohei Hatano, and Hiroki Nakayama</I></B><I></I>; 
-13:31-46, 2010.<BR>
-<A href="./momma10a.html">[abs]</A>
-<A target="_blank" href="./momma10a/momma10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Minimum Conditional Entropy Clustering: A Discriminative Framework for Clustering</DT>
-<DD><B><I>Bo Dai and Baogang Hu</I></B><I></I>; 
-13:47-62, 2010.<BR>
-<A href="./dai10a.html">[abs]</A>
-<A target="_blank" href="./dai10a/dai10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Efficient Collapsed Gibbs Sampling for Latent Dirichlet Allocation</DT>
-<DD><B><I>Han Xiao and Thomas Stibor</I></B><I></I>; 
-13:63-78, 2010.<BR>
-<A href="./xiao10a.html">[abs]</A>
-<A target="_blank" href="./xiao10a/xiao10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Variational Relevance Vector Machine for Tabular Data</DT>
-<DD><B><I>Dmitry Kropotov, Dmitry Vetrov, Lior Wolf, and Tal Hassner</I></B><I></I>; 
-13:79-94, 2010.<BR>
-<A href="./kropotov10a.html">[abs]</A>
-<A target="_blank" href="./kropotov10a/kropotov10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Hierarchical Gaussian Process Regression</DT>
-<DD><B><I>Sunho Park and Seungjin Choi</I></B><I></I>; 
-13:95-110, 2010.<BR>
-<A href="./park10a.html">[abs]</A>
-<A target="_blank" href="./park10a/park10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Content-based Image Retrieval with Multinomial Relevance Feedback</DT>
-<DD><B><I>Dorota Glowacka and John Shawe-Taylor</I></B><I></I>;
-13:111-125, 2010.<BR>
-<A href="./glowacka10a.html">[abs]</A>
-<A target="_blank" href="./glowacka10a/glowacka10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>The Coding Divergence for Measuring the Complexity of Separating Two Sets</DT>
-<DD><B><I>Mahito Sugiyama and Akihiro Yamamoto</I></B><I></I>;
-13:127-143, 2010.<BR>
-<A href="./sugiyama10b.html">[abs]</A>
-<A target="_blank" href="./sugiyama10b/sugiyama10b.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Single versus Multiple Sorting in All Pairs Similarity Search</DT>
-<DD><B><I>Yasuo Tabei, Takeaki Uno, Masashi Sugiyama, and Koji Tsuda</I></B><I></I>;
-13:145-160, 2010.<BR>
-<A href="./tabei10a.html">[abs]</A>
-<A target="_blank" href="./tabei10a/tabei10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>An EM Algorithm on BDDs with Order Encoding for Logic-based Probabilistic Models</DT>
-<DD><B><I>Masakazu Ishihata, Yoshitaka Kameya, Taisuke Sato, and Shin-ichi Minato</I></B><I></I>;
-13:161-176, 2010.<BR>
-<A href="./ishihata10a.html">[abs]</A>
-<A target="_blank" href="./ishihata10a/ishihata10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Exploiting the High Predictive Power of Multi-class Subgroups</DT>
-<DD><B><I>Tarek Abudawood and Peter Flach</I></B><I></I>;
-13:177-192, 2010.<BR>
-<A href="./abudawood10a.html">[abs]</A>
-<A target="_blank" href="./abudawood10a/abudawood10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Generative Models of Information Diffusion with Asynchronous Timedelay</DT>
-<DD><B><I>Kazumi Saito, Masahiro Kimura, Kouzou Ohara, and Hiroshi Motoda</I></B><I></I>;
-13:193-208, 2010.<BR>
-<A href="./saito10a.html">[abs]</A>
-<A target="_blank" href="./saito10a/saito10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Decision Tree for Dynamic and Uncertain Data Streams</DT>
-<DD><B><I>Chunquan Liang, Yang Zhang, and Qun Song</I></B><I></I>;
-13:209-224, 2010.<BR>
-<A href="./liang10a.html">[abs]</A>
-<A target="_blank" href="./liang10a/liang10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Accurate Ensembles for Data Streams: Combining Restricted Hoeffding Trees using Stacking</DT>
-<DD><B><I>Albert Bifet, Eibe Frank, Geoffrey Holmes, and Bernhard Pfahringer</I></B><I></I>;
-13:225-240, 2010.<BR>
-<A href="./bifet10a.html">[abs]</A>
-<A target="_blank" href="./bifet10a/bifet10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Mining Recurring Concept Drifts with Limited Labeled Streaming Data</DT>
-<DD><B><I>Peipei Li, Xindong Wu, and Xuegang Hu</I></B><I></I>;
-13:241-252, 2010.<BR>
-<A href="./li10a.html">[abs]</A>
-<A target="_blank" href="./li10a/li10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Hierarchical Convex NMF for Clustering Massive Data</DT>
-<DD><B><I>Kristian Kersting, Mirwaes Wahabzada, Christian Thurau,
-and Christian Bauckhage</I></B><I></I>;
-13:253-268, 2010.<BR>
-<A href="./kersting10a.html">[abs]</A>
-<A target="_blank" href="./kersting10a/kersting10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Multi-task Learning for Recommender System</DT>
-<DD><B><I>Xia Ning and George Karypis</I></B><I></I>;
-13:269-284, 2010.<BR>
-<A href="./ning10a.html">[abs]</A>
-<A target="_blank" href="./ning10a/ning10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Adaptive Step-size Policy Gradients with Average Reward Metric</DT>
-<DD><B><I>Takamitsu Matsubara, Tetsuro Morimura, and Jun Morimoto</I></B><I></I>;
-13:285-298, 2010.<BR>
-<A href="./matsubara10a.html">[abs]</A>
-<A target="_blank" href="./matsubara10a/matsubara10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Finite-sample Analysis of Bellman Residual Minimization</DT>
-<DD><B><I>Odalric-Ambrym Maillard, Remi Munos, Alessandro Lazaric, and Mohammad Ghavamzadeh</I></B><I></I>;
-13:299-314, 2010.<BR>
-<A href="./maillard10a.html">[abs]</A>
-<A target="_blank" href="./maillard10a/maillard10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>A Study of Approximate Inference in Probabilistic Relational Models</DT>
-<DD><B><I>Fabian Kaelin and Doina Precup</I></B><I></I>;
-13:315-330, 2010.<BR>
-<A href="./kaelin10a.html">[abs]</A>
-<A target="_blank" href="./kaelin10a/kaelin10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-<TR><TD><DL>
-<DT>Conceptual Imitation Learning: An Application to Human-robot Interaction</DT>
-<DD><B><I>Hossein Hajimirsadeghi, Majid Nili Ahmadabadi, Mostafa Ajallooeian,
-Babak Araabi, and Hadi Moradi</I></B><I></I>;
-13:331-346, 2010.<BR>
-<A href="./hajimirsadeghi10a.html">[abs]</A>
-<A target="_blank" href="./hajimirsadeghi10a/hajimirsadeghi10a.pdf">[pdf]</A>
-</DD></DL><P></P></TD></TR>
-
-</TBODY></TABLE></DIV> 
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  
+</div>
+<!-- Search Widget -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="../js/search.js"></script>

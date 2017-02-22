@@ -16,13 +16,14 @@ abstract: In general, imitation is imprecisely used to address different levels 
   and regeneration.
 pdf: "./hajimirsadeghi10a/hajimirsadeghi10a.pdf"
 layout: inproceedings
-key: hajimirsadeghi10a
+id: hajimirsadeghi10a
 month: 0
 firstpage: 331
 lastpage: 346
+page: 331-346
 origpdf: http://jmlr.org/proceedings/papers/v13/hajimirsadeghi10a/hajimirsadeghi10a.pdf
 sections: 
-authors:
+author:
 - given: Hossein
   family: Hajimirsadeghi
 - given: Majid Nili
@@ -33,4 +34,6 @@ authors:
   family: Araabi
 - given: Hadi
   family: Moradi
+date: '2010-10-31 00:05:31'
+publisher: PMLR
 ---
