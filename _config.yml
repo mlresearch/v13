@@ -1,11 +1,35 @@
-title: Volume 13
-description: > # this means to ignore newlines until "baseurl:"
-  PMLR Volume 13
+# Site settings
+# Auto generated from v13.bib
+---
+booktitle: Proceedings of 2nd Asian Conference on Machine Learning
+publisher: JMLR Workshop and Conference Proceedings
+month: 0
+address: Tokyo, Japan
+volume: 13
+year: '2010'
+shortname: ACML
+sections:
+- name: preface
+  title: Preface
+- name: default
+  title: Accepted Papers
+layout: proceedings
+key: SugiyamaACML2010
+abstract: 
+origpdf: 
+pdf: "./SugiyamaACML2010/SugiyamaACML2010.pdf"
+editors:
+- given: Masashi
+  family: Sugiyama
+- given: Qiang
+  family: Yang
+title: Proceedings of 2nd Asian Conference on Machine Learning
+conference: Proceedings of 2nd Asian Conference on Machine Learning
+email: ''
+description: Proceedings of 2nd Asian Conference on Machine Learning, Tokyo, Japan
+url: http://proceedings.mlr.press
 baseurl: "/v13"
-url: "http://proceedings.mlr.press"
 twitter_username: mlresearch
-github_username:  mlresearch
-
-# Build settings
+github_username: mlresearch
 markdown: kramdown
-theme: minima
+permalink: "/:title.html"
