@@ -1,0 +1,28 @@
+---
+title: Decision Tree for Dynamic and Uncertain Data Streams
+abstract: Current research on data stream classification mainly focuses on certain
+  data, in which precise and definite value is usually assumed. However, data with
+  uncertainty is quite natural in real-world application due to various causes, including
+  imprecise measurement, repeated sampling and network errors. In this paper, we focus
+  on uncertain data stream classification. Based on CVFDT and DTU, we propose our
+  UCVFDT (Uncertainty-handling and Concept-adapting Very Fast Decision Tree) algorithm,
+  which not only maintains the ability of CVFDT to cope with concept drift with high
+  speed, but also adds the ability to handle data with uncertain attribute. Experimental
+  study shows that the proposed UCVFDT algorithm is efficient in classifying dynamic
+  data stream with uncertain numerical attribute and it is computationally efficient.
+pdf: "./liang10a/liang10a.pdf"
+layout: inproceedings
+key: liang10a
+month: 0
+firstpage: 209
+lastpage: 224
+origpdf: http://jmlr.org/proceedings/papers/v13/liang10a/liang10a.pdf
+sections: 
+authors:
+- given: Chunquan
+  family: Liang
+- given: Yang
+  family: Zhang
+- given: Qun
+  family: Song
+---

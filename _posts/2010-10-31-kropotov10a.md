@@ -1,0 +1,31 @@
+---
+title: Variational Relevance Vector Machine for Tabular Data
+abstract: We adopt the Relevance Vector Machine (RVM) framework to handle cases of
+  table-structured data such as image blocks and image descriptors. This is achieved
+  by coupling the regularization coefficients of rows and columns of features. We
+  present two variants of this new gridRVM framework, based on the way in which the
+  regularization coefficients of the rows and columns are combined. Appropriate variational
+  optimization algorithms are derived for inference within this framework. The consequent
+  reduction in the number of parameters from the product of the table's dimensions
+  to the sum of its dimensions allows for better performance in the face of small
+  training sets, resulting in improved resistance to overfitting, as well as providing
+  better interpretation of results. These properties are demonstrated on synthetic
+  data-sets as well as on a modern and challenging visual identification benchmark.
+pdf: "./kropotov10a/kropotov10a.pdf"
+layout: inproceedings
+key: kropotov10a
+month: 0
+firstpage: 79
+lastpage: 94
+origpdf: http://jmlr.org/proceedings/papers/v13/kropotov10a/kropotov10a.pdf
+sections: 
+authors:
+- given: Dmitry
+  family: Kropotov
+- given: Dmitry
+  family: Vetrov
+- given: Lior
+  family: Wolf
+- given: Tal
+  family: Hassner
+---
