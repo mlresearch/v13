@@ -4,7 +4,6 @@
 booktitle: Proceedings of 2nd Asian Conference on Machine Learning
 publisher: JMLR Workshop and Conference Proceedings
 month: 0
-address: Tokyo, Japan
 volume: 13
 year: '2010'
 start: 2010-11-08
@@ -18,16 +17,15 @@ sections:
   title: Accepted Papers
 layout: proceedings
 id: SugiyamaACML2010
-abstract: 
+abstract: ''
 origpdf: 
-pdf: "./SugiyamaACML2010/SugiyamaACML2010.pdf"
+pdf: http://proceedings.pmlr.press/SugiyamaACML2010/SugiyamaACML2010.pdf
 editor:
 - given: Masashi
   family: Sugiyama
 - given: Qiang
   family: Yang
 title: Proceedings of 2nd Asian Conference on Machine Learning
-conference: Proceedings of 2nd Asian Conference on Machine Learning
 email: ''
 description: Proceedings of 2nd Asian Conference on Machine Learning, Tokyo, Japan
 url: http://proceedings.mlr.press
@@ -36,8 +34,17 @@ twitter_username: mlresearch
 github_username: mlresearch
 markdown: kramdown
 permalink: "/:title.html"
-gitub:
+github:
   edit: true
+  repository: v13
+conference:
+  name: 
+  url: 
+  location: Tokyo, Japan
+  dates:
+  - 2010-11-08
+  - 2010-11-09
+  - 2010-11-10
 analytics:
   google:
     tracking_id: UA-92432422-1
