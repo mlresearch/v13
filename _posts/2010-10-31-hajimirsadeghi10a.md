@@ -14,7 +14,7 @@ abstract: In general, imitation is imprecisely used to address different levels 
   task of imitating signs produced by hand movements. Experimental results show efficiency
   of our model for concept extraction, symbol emergence, motion pattern recognition,
   and regeneration.
-pdf: http://jmlr.org/proceedings/papers/v13/hajimirsadeghi10a/hajimirsadeghi10a.pdf
+pdf: http://proceedings.mlr.press/v13/hajimirsadeghi10a/hajimirsadeghi10a.pdf
 layout: inproceedings
 id: hajimirsadeghi10a
 month: 0
@@ -33,7 +33,6 @@ author:
   family: Araabi
 - given: Hadi
   family: Moradi
-reponame: v13
 date: 2010-10-31
 address: Tokyo, Japan
 publisher: PMLR
