@@ -18,8 +18,6 @@ sections:
 layout: proceedings
 id: SugiyamaACML2010
 abstract: ''
-origpdf: 
-pdf: http://proceedings.pmlr.press/SugiyamaACML2010/SugiyamaACML2010.pdf
 editor:
 - given: Masashi
   family: Sugiyama
