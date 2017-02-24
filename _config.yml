@@ -1,5 +1,3 @@
-# Site settings
-# Auto generated from v13.bib
 ---
 booktitle: Proceedings of 2nd Asian Conference on Machine Learning
 publisher: JMLR Workshop and Conference Proceedings
@@ -16,6 +14,7 @@ sections:
 - name: default
   title: Accepted Papers
 layout: proceedings
+series: Proceedings of Machine Learning Research
 id: SugiyamaACML2010
 abstract: ''
 editor:
@@ -46,3 +45,5 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
+# Site settings
+# Auto generated from v13.bib

@@ -16,6 +16,7 @@ abstract: In general, imitation is imprecisely used to address different levels 
   and regeneration.
 pdf: http://proceedings.mlr.press/v13/hajimirsadeghi10a/hajimirsadeghi10a.pdf
 layout: inproceedings
+series: Proceedings of Machine Learning Research
 id: hajimirsadeghi10a
 month: 0
 firstpage: 331
