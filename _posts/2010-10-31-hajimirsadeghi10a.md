@@ -19,8 +19,8 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: hajimirsadeghi10a
 month: 0
-firstpage: '331'
-lastpage: '346'
+firstpage: 331
+lastpage: 346
 page: 331-346
 sections: 
 author:
