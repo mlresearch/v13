@@ -19,6 +19,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: hajimirsadeghi10a
 month: 0
+tex_title: 'Conceptual Imitation Learning: An Application to Human-robot Interaction'
 firstpage: 331
 lastpage: 346
 page: 331-346
