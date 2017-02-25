@@ -22,9 +22,19 @@ editor:
   family: Sugiyama
 - given: Qiang
   family: Yang
-title: Proceedings of 2nd Asian Conference on Machine Learning
-email: ''
-description: Proceedings of 2nd Asian Conference on Machine Learning, Tokyo, Japan
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of 2nd Asian Conference on Machine Learning
+    Held in Tokyo, Japan on 8-10 November 2010
+
+  Published as Volume 13 by the Proceedings of Machine Learning Research on 31 October 2010.
+
+  Volume Edited by:
+    Masashi Sugiyama
+    Qiang Yang
+
+  Series Editors:
+    Neil D. Lawrence
 url: http://proceedings.mlr.press
 baseurl: "/v13"
 twitter_username: mlresearch
@@ -34,6 +44,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v13
+email: ''
 conference:
   name: Proceedings of 2nd Asian Conference on Machine Learning
   url: 
