@@ -36,6 +36,7 @@ description: |
 
   Series Editors:
     Neil D. Lawrence
+date_str: 8--10 Nov
 url: http://proceedings.mlr.press
 baseurl: "/v13"
 twitter_username: mlresearch
@@ -45,6 +46,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v13
+bibtex_copy: true
 email: ''
 conference:
   name: Proceedings of 2nd Asian Conference on Machine Learning
