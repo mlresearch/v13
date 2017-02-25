@@ -26,7 +26,7 @@ editor:
   family: Yang
 description: |
   Proceedings of 2nd Asian Conference on Machine Learning
-    Held in Tokyo, Japan on 8-10 November 2010
+    Held in Tokyo, Japan on 08-10 November 2010
 
   Published as Volume 13 by the Proceedings of Machine Learning Research on 31 October 2010.
 
@@ -36,7 +36,7 @@ description: |
 
   Series Editors:
     Neil D. Lawrence
-date_str: 8--10 Nov
+date_str: 08--10 Nov
 url: http://proceedings.mlr.press
 baseurl: "/v13"
 twitter_username: mlresearch
