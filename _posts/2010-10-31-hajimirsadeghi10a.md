@@ -23,7 +23,8 @@ tex_title: 'Conceptual Imitation Learning: An Application to Human-robot Interac
 firstpage: 331
 lastpage: 346
 page: 331-346
-sections: 
+order: 331
+cycles: false
 author:
 - given: Hossein
   family: Hajimirsadeghi
