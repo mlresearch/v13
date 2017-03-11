@@ -16,15 +16,13 @@ sections:
 layout: proceedings
 series: Proceedings of Machine Learning Research
 id: SugiyamaACML2010
-abstract: ''
-tex_title: 
-title: Proceedings of Machine Learning Research
 cycles: false
 editor:
 - given: Masashi
   family: Sugiyama
 - given: Qiang
   family: Yang
+title: Proceedings of Machine Learning Research
 description: |
   Proceedings of 2nd Asian Conference on Machine Learning
     Held in Tokyo, Japan on 08-10 November 2010
@@ -40,7 +38,7 @@ description: |
 date_str: 08--10 Nov
 url: http://proceedings.mlr.press
 baseurl: "/v13"
-twitter_username: mlresearch
+twitter_username: MLResearchPress
 github_username: mlresearch
 markdown: kramdown
 permalink: "/:title.html"
@@ -52,6 +50,7 @@ display:
     bibtex: true
     endnote: true
     apa: true
+    ris: true
   comments: false
 email: ''
 conference:
@@ -67,3 +66,4 @@ analytics:
     tracking_id: UA-92432422-1
 # Site settings
 # Auto generated from v13.bib
+---
