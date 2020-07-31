@@ -15,6 +15,7 @@ sections:
   title: Accepted Papers
 layout: proceedings
 series: Proceedings of Machine Learning Research
+issn: 1938-7228
 id: SugiyamaACML2010
 cycles: false
 editor:
@@ -35,14 +36,17 @@ description: |
 
   Series Editors:
     Neil D. Lawrence
-date_str: 08--10 Nov
+date_str: '08--10 Nov'
 url: http://proceedings.mlr.press
 baseurl: "/v13"
 twitter_username: MLResearchPress
 github_username: mlresearch
 markdown: kramdown
+plugins:
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
 permalink: "/:title.html"
-github:
+ghub:
   edit: true
   repository: v13
 display:
@@ -65,6 +69,6 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
+orig_bibfile: "/Users/neil/mlresearch/bibtex.bib"
 # Site settings
-# Auto generated from v13.bib
----
+# Original source:  /Users/neil/mlresearch/bibtex.bib
